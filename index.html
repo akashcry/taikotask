@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Transactions</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taiko Transactions</h1>
+    <button id="connectButton">Connect Rabby</button>
+    <div id="transactionSection" style="display: none;">
+        <label for="ethAmount">ETH Amount:</label>
+        <input type="number" id="ethAmount" step="any" placeholder="Enter ETH amount"><br><br>
+        <label for="loopCount">Loop Count:</label>
+        <input type="number" id="loopCount" placeholder="Enter number of loops"><br><br>
+        <button id="submitButton">Submit Transactions</button>
+        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Transaction Hash</th>
+                </tr>
+            </thead>
+            <tbody id="statusTable">
+                <!-- Table rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div id="status"></div>
+</body>
+</html>
