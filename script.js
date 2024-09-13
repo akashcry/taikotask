@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         maxPriorityFeePerGas: web3.utils.toWei("0.1", "gwei"),
         maxFeePerGas: web3.utils.toWei("0.1", "gwei"),
       };
-
+      console.log(txToSend)
       const txHash = await web3.eth.sendTransaction(txToSend);
       console.log(txHash);
       return txHash.transactionHash;
