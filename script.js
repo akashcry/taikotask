@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
               {
                 chainId: web3.utils.toHex(desiredChainId),
                 chainName: "Taiko",
-                rpcUrls: ["https://rpc.taiko.xyz"], // Add the RPC URL
+                rpcUrls: ["https://rpc.ankr.com/taiko"], // Add the RPC URL
                 nativeCurrency: {
                   name: "ETH",
                   symbol: "ETH",
